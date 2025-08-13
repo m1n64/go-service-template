@@ -3,6 +3,8 @@ services:
     build:
       target: dev
     command: air
+    environment:
+      GIN_MODE: "debug"
     ports:
       - "5864:5864"
 
