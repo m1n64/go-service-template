@@ -13,6 +13,7 @@ func init() {
 
 func main() {
 	utils.InitMigrations(dependencies.DB)
+	dependencies.Logger.Info("Service started")
 
 	select {}
 }
